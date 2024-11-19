@@ -1,0 +1,13 @@
+
+  
+    const fs = require('fs');  // Σωστή χρήση του 'require'
+
+    fs.readFile('myfile.txt', 'utf8', (err, data) => {  // Σωστή μέθοδος readFile
+        if (err) {
+            console.error(err);  // Εκτύπωση σφάλματος
+            return;
+        }
+        console.log(data);  // Εκτύπωση περιεχομένου του αρχείου
+    });
+
+  
